@@ -1,0 +1,26 @@
+[INFO  - 2018-06-21T13:58:47.946Z] GhostDriver - Main - running on port 59621
+[INFO  - 2018-06-21T13:58:47.968Z] Session [382b5dc0-755b-11e8-ab72-e7cd358dcc6c] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2018-06-21T13:58:47.968Z] Session [382b5dc0-755b-11e8-ab72-e7cd358dcc6c] - page.customHeaders:  - {}
+[INFO  - 2018-06-21T13:58:47.968Z] Session [382b5dc0-755b-11e8-ab72-e7cd358dcc6c] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2018-06-21T13:58:47.968Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 382b5dc0-755b-11e8-ab72-e7cd358dcc6c
+[ERROR - 2018-06-21T13:58:48.874Z] Session [382b5dc0-755b-11e8-ab72-e7cd358dcc6c] - page.onError - msg: TypeError: null is not an object (evaluating '(o=t.match(/Version\/[\d.]*/))[0]')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-06-21T13:58:48.874Z] Session [382b5dc0-755b-11e8-ab72-e7cd358dcc6c] - page.onError - stack:
+  n (https://res.suning.cn/??/project/pdsWeb/pc2017/template-min.js,/project/pdsWeb/pc2017/iFourth-min.js,/project/pdsWeb/pc2017/itemComDataLoadNew-min.js,/project/pdsWeb/pc2017/inititem-min.js,/project/pdsWeb/pc2017/Mp4player.min20180408.js,/public/v5/mod/sfeCity/1.0.1/SFE.city.js,/project/crdnode/common/tingyun.js?v=2018060300:11682)
+  (anonymous function) (https://res.suning.cn/??/project/pdsWeb/pc2017/template-min.js,/project/pdsWeb/pc2017/iFourth-min.js,/project/pdsWeb/pc2017/itemComDataLoadNew-min.js,/project/pdsWeb/pc2017/inititem-min.js,/project/pdsWeb/pc2017/Mp4player.min20180408.js,/public/v5/mod/sfeCity/1.0.1/SFE.city.js,/project/crdnode/common/tingyun.js?v=2018060300:11682)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-06-21T13:58:49.035Z] Session [382b5dc0-755b-11e8-ab72-e7cd358dcc6c] - page.onError - msg: TypeError: undefined is not a constructor (evaluating '$("#sncity").mCity')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-06-21T13:58:49.035Z] Session [382b5dc0-755b-11e8-ab72-e7cd358dcc6c] - page.onError - stack:
+  initCityButton (https://res.suning.cn/??/project/pdsWeb/pc2017/template-min.js,/project/pdsWeb/pc2017/iFourth-min.js,/project/pdsWeb/pc2017/itemComDataLoadNew-min.js,/project/pdsWeb/pc2017/inititem-min.js,/project/pdsWeb/pc2017/Mp4player.min20180408.js,/public/v5/mod/sfeCity/1.0.1/SFE.city.js,/project/crdnode/common/tingyun.js?v=2018060300:8229)
+  initialize (https://res.suning.cn/??/project/pdsWeb/pc2017/template-min.js,/project/pdsWeb/pc2017/iFourth-min.js,/project/pdsWeb/pc2017/itemComDataLoadNew-min.js,/project/pdsWeb/pc2017/inititem-min.js,/project/pdsWeb/pc2017/Mp4player.min20180408.js,/public/v5/mod/sfeCity/1.0.1/SFE.city.js,/project/crdnode/common/tingyun.js?v=2018060300:8202)
+  (anonymous function) (https://product.suning.com/0000000000/690105195.html:322)
+  o (https://res.suning.cn/??/public/v3/js/jquery.js,/public/v3/js/sn_lazyload.js,/public/v3/js/lazyelem.min.js,/public/v3/js/SFE.base.min.js,/public/v3/js/search.min.js,/public/sidebar/build/js/sn-sidebar.min.js,/project/yunxin/js/chatCompat_mini.js,/javascript/sn_da/sa_click.js?v=2018052301:3)
+  fireWith (https://res.suning.cn/??/public/v3/js/jquery.js,/public/v3/js/sn_lazyload.js,/public/v3/js/lazyelem.min.js,/public/v3/js/SFE.base.min.js,/public/v3/js/search.min.js,/public/sidebar/build/js/sn-sidebar.min.js,/project/yunxin/js/chatCompat_mini.js,/javascript/sn_da/sa_click.js?v=2018052301:3)
+  ready (https://res.suning.cn/??/public/v3/js/jquery.js,/public/v3/js/sn_lazyload.js,/public/v3/js/lazyelem.min.js,/public/v3/js/SFE.base.min.js,/public/v3/js/search.min.js,/public/sidebar/build/js/sn-sidebar.min.js,/project/yunxin/js/chatCompat_mini.js,/javascript/sn_da/sa_click.js?v=2018052301:3)
+  B (https://res.suning.cn/??/public/v3/js/jquery.js,/public/v3/js/sn_lazyload.js,/public/v3/js/lazyelem.min.js,/public/v3/js/SFE.base.min.js,/public/v3/js/search.min.js,/public/sidebar/build/js/sn-sidebar.min.js,/project/yunxin/js/chatCompat_mini.js,/javascript/sn_da/sa_click.js?v=2018052301:3)
+
+  phantomjs://platform/console++.js:263 in error
