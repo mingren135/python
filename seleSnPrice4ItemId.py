@@ -31,22 +31,12 @@ def findSnItemPrice(itemId):
   promDesc = promDescList[0].get_text()
   #print(priceList)
   #print(itemNameList)
-  if len(priceList)>0:
-    for price in priceList:  
-      strPrice = price.get_text().replace('¥','').replace('.00','')
-      print("itemId=%s,price:%d,itemName:%s,promDesc:%s" % (itemId,int(strPrice), itemName, promDesc))
-  else:
-      strPrice = "-1"
-      print("itemId=%s,price:%d,itemName:%s,promDesc:%s" % (itemId,int(strPrice), itemName, promDesc))
+  for price in priceList:  
+    strPrice = price.get_text().replace('¥','').replace('.00','')
+    print("itemId=%s,price:%d,itemName:%s,promDesc:%s" % (itemId,int(strPrice), itemName, promDesc))
+
 if len(sys.argv)<0:
   print('arguments at least 1')
 
-lines = []
-fileName = sys.argv[1]
-with open(fileName) as f:
-  lines = f.readlines()
-print(lines)
-
-for itemId in lines:
-  itemId = itemId.strip('\n')
-  findSnItemPrice(itemId)
+if len(sys.argv)>1:
+  findSnItemPrice(sys.argv[1])
