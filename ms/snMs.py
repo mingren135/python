@@ -36,7 +36,10 @@ def buy(driver, itemId):
   submitElem = driver.find_element_by_id("submit-btn")
   submitElem.click()
   #print('submit clicked, itemId:%s' % itemId)
- 
+
+def buyApi(driver, itemId, quantity=1):
+   
+
 if __name__ == '__main__':
   if len(sys.argv) < 3:
     print('must input nick&password')

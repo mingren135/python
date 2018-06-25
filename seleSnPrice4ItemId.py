@@ -38,5 +38,4 @@ def findSnItemPrice(itemId):
 if len(sys.argv)<0:
   print('arguments at least 1')
 
-if len(sys.argv)>1:
-  findSnItemPrice(sys.argv[1])
+findSnItemPrice(sys.argv[1])
