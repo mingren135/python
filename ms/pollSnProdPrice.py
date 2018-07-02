@@ -36,6 +36,9 @@ def findSnItemPrice(product):
     kucunStatusList = bsObj.select("#c_kucun")
     itemStatus = kucunStatusList[0].get_text()
   print("itemStatus:%s" % itemStatus)
+
+  mjPromDescList = bsObj.select("#voucherBox")
+  mjPromDesc = mjPromDescList[0].get_text()
   #print(priceList)
   #print(itemNameList)
   if len(priceList)>0:
@@ -45,28 +48,32 @@ def findSnItemPrice(product):
       strPrice = "-1"
   
   product.printProd()
-  print("price:%s,name:%s,desc:%s" % (strPrice, itemName, promDesc))
+  print("price:%s,name:%s,desc:%s,mjProm:%s" % (strPrice, itemName, promDesc, mjPromDesc))
 
 if __name__ == '__main__':
   if len(sys.argv) < 2:
     print('arguments at least 1')
     print('usage: python3 pollSnProdPrice.py snProdIds.txt')
     sys.exit()
-
-  lines = []
+  
+  dict = {}
+  prodKeys = []
   fileName = sys.argv[1]
   with open(fileName) as f:
     for line in f:
-      #if line.startswith('#'):
-      #  print('------------------------------')
-      #  continue
+      if line.startswith('#'):
+        prodKey = line.strip('#').strip('\n')
+        prodKeys.append(prodKey)
+        prods = []
+        dict[prodKey] = prods
+        continue
       #print('line:%s' % line)
-      lines.append(line.strip('\n'))
+      prods.append(Product(line.strip('\n')))
 
-  for line in lines:
-    if line.startswith('#'):
-      print('------------------------------%s' % line.strip('\n'))
-      continue
-    prod = Product(line)
-    findSnItemPrice(prod)
-    print('')
+  #print("dict:%s" % dict)
+  for prodKey in prodKeys:
+    print('------------------------------%s' % prodKey)
+    prods = dict[prodKey]
+    for prod in prods:
+      findSnItemPrice(prod)
+      print('')
